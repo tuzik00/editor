@@ -1,13 +1,20 @@
 import React from 'react';
 
 
-const Text = () => (
-    <textarea name="" id="" cols="30" rows="10"/>
-);
 
-function App() {
+function App({onChange, vueValue}) {
     return (
-        <Text/>
+        <div>
+            <h1>
+                React component
+            </h1>
+
+            <input
+                onInput={onChange}
+            />
+
+            vue {vueValue}
+        </div>
     );
 }
 
